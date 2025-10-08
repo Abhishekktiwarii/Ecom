@@ -8,4 +8,13 @@
         <property name="msg" value="This is first Bean"/>
     </bean>
 
+    <bean id="specs" class="com.example.Learn.Spring.ConstructorInjection.Specification">
+        <property name="brand" value="XUV700"/>
+        <property name="model" value="700"/>
+    </bean>
+    <bean id="cars" class="com.example.Learn.Spring.ConstructorInjection.Car">
+        <constructor-arg ref="specs"/>
+    </bean>
+
+
 </beans>
